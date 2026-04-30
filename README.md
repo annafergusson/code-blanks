@@ -1,14 +1,12 @@
 # code-blanks
 
-`code-blanks` is a Quarto extension that supports the authoring of interactive worked examples involving code.
-
-`code-blanks` lets authors create editable code examples where learners can only modify specific aspects (the blanks), run code (in-browser using WebR or alternatives), view plots/output, write responses, and progress through activities step-by-step.
+`code-blanks` is a Quarto extension that supports the authoring of interactive worked examples involving code. The extension lets authors create editable code examples where learners can only modify specific aspects (the blanks), run code (in-browser using WebR or alternatives), view plots/output, write responses, and progress through activities step-by-step.
 
 **Why code blanks?**
 
 “code blanks” is a pedagogical approach/tool that provides students with code that contains only some sections that are editable, in order to focus attention on key programming decisions. Code blanks use a combination of visual scaffolding (purple blanks) and constrained interaction mechanisms (text boxes) to support purposeful reasoning and problem-solving within authentic data science workflows.
 
-Slides from SDSS2025 talk *Learning through tinkering: Designing interactive worked examples for introductory-level data science students* 
+Slides from SDSS2025 talk *Learning through tinkering: Designing interactive worked examples for introductory-level data science students* [to be added].
 
 > Note: The development of this Quarto extension was influenced by the [Flouish Quarto extension](https://github.com/kbodwin/flourish) developed by Kelly Bodwin and Visruth Kandali.
 ---
