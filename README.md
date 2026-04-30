@@ -9,7 +9,6 @@
 Slides from SDSS2025 talk *Learning through tinkering: Designing interactive worked examples for introductory-level data science students* [to be added].
 
 > Note: The development of this Quarto extension was influenced by the [Flouish Quarto extension](https://github.com/kbodwin/flourish) developed by Kelly Bodwin and Visruth Kandali.
----
 
 ## Features
 
@@ -24,8 +23,6 @@ Slides from SDSS2025 talk *Learning through tinkering: Designing interactive wor
 * Support for custom functions and setup code
 * Customisable JavaScript runner and CSS styling
 
----
-
 ## Installation
 
 ```bash
@@ -38,8 +35,6 @@ Then in your document:
 filters:
   - code-blanks
 ```
-
----
 
 ## Minimal example
 
@@ -55,7 +50,6 @@ code-blanks:
     - ggplot2
   setup:
     - library(ggplot2)
----
 
 ```{code-blanks}
 #| blank:
@@ -70,8 +64,6 @@ ggplot() +
   geom_histogram(aes(x = numbers))
 ```
 ````
-
----
 
 ## Code blank options
 
@@ -108,8 +100,6 @@ will replace `density` inside:
 geom_density()
 ```
 
----
-
 ## Document options
 
 ```yaml
@@ -133,8 +123,6 @@ code-blanks:
 | `plot-height`        | Plot height in pixels         |
 | `progressive-reveal` | Reveal sections one at a time |
 
----
-
 ## Instruction boxes
 
 ````markdown
@@ -146,8 +134,6 @@ Try changing `n` and rerun the code.
 ```
 ````
 
----
-
 ## Response boxes
 
 ````markdown
@@ -155,8 +141,6 @@ Try changing `n` and rerun the code.
 What do you notice about the shape of the graph?
 ```
 ````
-
----
 
 ## Custom functions
 
@@ -169,8 +153,6 @@ double_it <- function(x) {
 ````
 
 Functions are automatically available to runnable code blocks.
-
----
 
 ## Overriding the runner script
 
@@ -221,8 +203,6 @@ Where:
 | `code`      | Reconstructed runnable code            |
 | `outputDiv` | Element where output should be written |
 
----
-
 ## Customising colours / styling
 
 You can override CSS in your Quarto document.
@@ -264,8 +244,6 @@ Then in `styles.css`:
 | `.code-blanks-instructions-box` | Instruction box           |
 | `.code-blanks-next-section`     | Progressive reveal button |
 
----
-
 ## Saving progress
 
 The extension saves locally in the learner’s browser:
@@ -277,15 +255,11 @@ The extension saves locally in the learner’s browser:
 
 No data is sent to a server.
 
----
-
 ## Browser notes
 
 Best experience in a modern browser such as Chrome, Edge, or Firefox.
 
 RStudio Viewer may not fully support WebR graphics.
-
----
 
 ## Limitations
 
@@ -297,15 +271,13 @@ Package loading can take time.
 
 Local storage is browser-local, not submitted anywhere.
 
----
+And probably a bunch more!
 
 ## Current status
 
 Early release (`v0.1.0`) under active development.
 
 Feedback and ideas welcome.
-
----
 
 ## License
 
