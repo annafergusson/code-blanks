@@ -4,11 +4,15 @@
 
 **Why code blanks?**
 
-“code blanks” is a pedagogical approach/tool that provides students with code that contains only some sections that are editable, in order to focus attention on key programming decisions. Code blanks use a combination of visual scaffolding (purple blanks) and constrained interaction mechanisms (text boxes) to support purposeful reasoning and problem-solving within authentic data science workflows.
-
-Slides from SDSS2025 talk *Learning through tinkering: Designing interactive worked examples for introductory-level data science students* [to be added].
+“code blanks” is a pedagogical approach that provides students with code that contains only some sections that are editable, in order to focus attention on key programming decisions. Code blanks use a combination of visual scaffolding (purple blanks) and constrained interaction mechanisms (text boxes) to support purposeful reasoning and problem-solving within authentic data science workflows.
 
 > Note: The development of this Quarto extension was influenced by the [Flouish Quarto extension](https://github.com/kbodwin/flourish) developed by Kelly Bodwin and Visruth Kandali.
+
+**Associated research**
+
+The "code blanks" approach is being investigated through several research projects led by Dr Anna Fergusson (University of Auckland).
+
+Slides from SDSS2025 talk *Learning through tinkering: Designing interactive worked examples for introductory-level data science students* [to be added].
 
 ## Features
 
