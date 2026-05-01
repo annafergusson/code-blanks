@@ -56,6 +56,7 @@ code-blanks:
     - ggplot2
   setup:
     - library(ggplot2)
+---
 
 ```{code-blanks}
 #| blank:
