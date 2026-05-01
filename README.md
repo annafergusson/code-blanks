@@ -72,6 +72,8 @@ ggplot() +
 ```
 ````
 
+![](example.png)
+
 ## Code blank options
 
 Each blank is defined using metadata lines.
