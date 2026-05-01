@@ -39,6 +39,14 @@ document.addEventListener("DOMContentLoaded", () => {
     return clone.innerText;
   }
 
+  function isErrorOutput(text) {
+  if (!text) return false;
+
+  const firstLine = text.trim().split("\n")[0].trim();
+
+  return /^Error\b.*:/.test(firstLine);
+}
+
   function showError(outputDiv, message) {
     outputDiv.innerHTML =
       `<div class="code-blanks-error-box"><pre>${message}</pre></div>`;
@@ -94,15 +102,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
       try {
         await window.codeBlanksRun(code, outputDiv);
-        
-        if (window.codeBlanksSaveOutputs) {
-          window.codeBlanksSaveOutputs();
-        }
 
         const txt = outputDiv.innerText.trim();
 
-        if (txt.startsWith("Error:")) {
+        if (isErrorOutput(txt)) {
           showError(outputDiv, txt);
+        }
+
+        if (window.codeBlanksSaveOutputs) {
+          window.codeBlanksSaveOutputs();
         }
 
       } catch (err) {
@@ -121,6 +129,14 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       outputDiv.innerHTML = "";
+
+      if (window.codeBlanksSaveInputs) {
+        window.codeBlanksSaveInputs();
+      }
+
+      if (window.codeBlanksSaveOutputs) {
+        window.codeBlanksSaveOutputs();
+      }
     });
 
     copyBtn.addEventListener("click", async () => {
