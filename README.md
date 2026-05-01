@@ -14,7 +14,7 @@
 
 The "code blanks" approach is being investigated through several research projects led by Dr Anna Fergusson (University of Auckland).
 
-Slides from SDSS2025 talk *Learning through tinkering: Designing interactive worked examples for introductory-level data science students* [to be added].
+[Slides from SDSS2025 talk *Learning through tinkering: Designing interactive worked examples for introductory-level data science students*](https://github.com/annafergusson/sdss2026/blob/main/README.md)
 
 ## Features
 
